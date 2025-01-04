@@ -1,0 +1,1 @@
+jq 'keys[]' curls.json | fzf | xargs -I {} jq -r '.{}' curls.json | sed -e s/{{TOKEN}}/test_token/ -e s/{{PATH_PARAM}}/test_param/ | tee -a command.log | bash

@@ -1,0 +1,8 @@
+{
+	"Test_curl": "curl https://reqbin.com/echo",
+	"Test_get": "curl http://example.com/api/ping",
+	"test_post": "curl -X PUT -d '{\"name\":\"Sugar\", \"category_id\":2}' -H 'Content-Type: application/json' http://example.com/api/products",
+	"token_example": "curl -X GET 'https://api.example.com/data' -H 'Authorization: Bearer {{TOKEN}}'",
+	"get_token": "curl -X POST 'https://reqres.in/api/login' -H 'Content-Type: application/json' -d '{\"email\": \"eve.holt@reqres.in\", \"password\": \"cityslicka\"}' | jq -r '.token'",
+	"token_example": "curl -X GET 'https://api.example.com/data/{{PATH_PARAM}}' -H 'Authorization: Bearer {{TOKEN}}'"
+}
